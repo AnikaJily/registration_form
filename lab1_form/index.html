@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <form action="" name="Первая форма"> 
+            <legend>Форма регистрации</legend>
+            <!-- action - что будет когда нажнем кнопку отправить -->
+            <!-- <h1>ФИО</h1> -->
+             <div class="input-box">
+                <label for="">ФИО</label>
+                <input name="name" type="text" placeholder="Аникина Анастасия Андреевна" required>
+             </div>
+
+             <div class="input-box">
+                <label for="">Пароль</label>
+                <input name="password" type="password" placeholder="*******" maxlength="8">
+            </div>
+
+            <div class="input-box">
+                <label for="">Повтор пароля</label>
+                <input name="password" type="password" placeholder="*******" maxlength="8">
+            </div>
+
+            <div class="input-box">
+                <label for="">Дата рождения</label>
+                <input type="date" placeholder="дд.мм.гггг" >
+            </div>
+
+            <div class="input-box">
+                <label for="">Город</label>
+                <input list="4" placeholder="Москва">
+                <datalist id="4">
+                    <option >Москва</option>
+                    <option >Уфа</option>
+                    <option >Туймазы</option>
+                </datalist>
+            </div>
+
+            <div class="input-box">
+                <label for="">Ляля</label>
+                <span class="for">
+                <span class="radio-group">
+                    <input type="radio" name="sound" id="may">
+                    <label for="may">Мяу</label>
+
+                    <input type="radio" name="sound" id="gav">
+                    <label for="gav">Гав</label>
+                </span>
+                </span>
+            </div>
+
+            <div class="input-box">
+                <label for="">Пол</label>
+                <span class="for">
+                <span class="radio-group">
+                    <input type="radio" name="gender" id="female">
+                    <label for="femal">Женщина</label>
+
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Мужчина</label>
+                </span>
+                </span>
+            </div>
+
+            
+            <div class="input-box">
+                <label for="">Почта</label>
+                <input name="name" type="email" placeholder="sobaka@mail.ru" required>
+             </div>
+
+             <div class="input-box">
+                <label for="">Мотивация</label>
+                <textarea name="motivation" id="motivation" placeholder="Расскажите о своей мотивации..." rows="4" required></textarea>
+             </div>
+             
+             <div class="input-box-port">
+                
+                <label for="">Портфолио</label>
+                <input type="file" id ="file" required>
+                <label for="file" id="label1">Загрузить файл</label>
+             </div>
+
+            <div class="remember">
+                <label for=""><input type="checkbox">Согласие на обработку персональных данных</label>
+            </div>
+
+            <a href="about:blank" target="_blank">
+                <button type="button" class="btn">Войти</button>
+            </a>
+            <button type="reset" class="btn">Очистить форму</button>
+            
+<!-- 
+            <br>
+             <select name="Курсы обучения" id="kurs">
+                <optgroup label="Собаки">
+                    <option value="cute">Милашки</option>
+                    <option value="smart">Умняшки</option>
+                    <option value="fast">Быстряшки</option>
+                </optgroup>
+
+             </select>
+
+             <input list="4">
+             <datalist id="4">
+                <option value="cute">Милашки</option>
+                <option value="smart">Умняшки</option>
+                <option value="fast">Быстряшки</option>
+             </datalist>
+             <br>
+             <input type="submit" value="Отправить"> -->
+        </form>
+    </div>
+</body>
+
+</html>
